@@ -9,3 +9,16 @@
 // charCount("b", "big fat bubble") ➞ 4
 // Notes
 // Your output must be case-sensitive (see second example).
+let sum = 0;
+
+function findNumberOfChar(chosenChar, someString) {
+
+    for (let i = 0; i < someString.length; i++) {
+        if (someString[i] === chosenChar) {
+            sum += 1;
+        }
+    }
+    return sum;
+}
+
+console.log(findNumberOfChar("b", "big fat bubble"));
